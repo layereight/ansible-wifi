@@ -63,5 +63,5 @@ myhost ansible_host=192.168.0.101 ansible_user=myuser ansible_ssh_pass=password
   
   vars:
     wifi_ssid: "my_wifi_name"
-    wifi_psk": "my_wifi_password"
+    wifi_psk: "my_wifi_password"
 ```
