@@ -1,0 +1,20 @@
+---
+
+  #
+  # install wpa_supplicant
+  #
+  - name: Install wpa_supplicant
+    become: yes
+    apt:
+      name: wpasupplicant
+
+  #
+  # configure wpa_supplicant
+  #
+  - name: Configure wpa_supplicant
+    become: yes
+    template:
+      src: wpa_supplicant.conf.j2
+      dest: /etc/wpa_supplicant/wpa_supplicant.conf
+      backup: yes
+    notify: Restart Networking
