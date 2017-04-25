@@ -41,6 +41,10 @@ $ ansible-galaxy install -r requirements.yml
   * default: "DE"
   * description: 
 
+* **wifi_apt_cache_valid_time**
+  * default: 86400
+  * description: number of seconds APT cache is valid for
+
 ## Example Playbook
 
 Typical playbook run:
