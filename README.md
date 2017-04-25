@@ -40,6 +40,11 @@ $ ansible-galaxy install -r requirements.yml
 * **wifi_country**
   * default: "DE"
   * description: 
+  
+* **wifi_control_interface_access_group**
+  * default: root
+  * description: potentially used to allow non-root users to use the control interface 
+    [see wpa_supplicant for more information](https://w1.fi/cgit/hostap/tree/wpa_supplicant/wpa_supplicant.conf#n44)
 
 ## Example Playbook
 
