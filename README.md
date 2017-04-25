@@ -14,18 +14,18 @@ Typical run:
 $ ansible-galaxy install layereight.wifi
 ```
 
-If you want to install a specific version directly from github:
+If you want to install a specific version in a collection with other roles using a role file:
 ```sh
-$ ansible-galaxy install -r requirements.yml
+$ ansible-galaxy install -r roles.yml
 ```
-*requirements.yml*
+*roles.yml*
 ```YAML
 - name: layereight.wifi
-  src: https://github.com/layereight/ansible-wifi
-  version: "1.0"
+  src: layereight.wifi
+  version: "1.1"
 ```
-* also see the [Ansible Galaxy documentation](http://docs.ansible.com/ansible/galaxy.html)
-
+* also see the [Ansible Galaxy documentation](http://docs.ansible.com/ansible/galaxy.html) and the 
+[Ansible Galaxy introduction](https://galaxy.ansible.com/intro)
 
 ## Role Variables
 
