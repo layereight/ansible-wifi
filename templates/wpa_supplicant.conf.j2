@@ -1,5 +1,5 @@
 country={{ wifi_country }}
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP={{ wifi_control_interface_access_group }}
 update_config=1
 
 network={
