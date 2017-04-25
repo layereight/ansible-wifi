@@ -7,6 +7,8 @@
     become: yes
     apt:
       name: wpasupplicant
+      update_cache: yes
+      cache_valid_time: "{{ wifi_apt_cache_valid_time }}"
 
   #
   # configure wpa_supplicant

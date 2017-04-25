@@ -46,6 +46,10 @@ $ ansible-galaxy install -r requirements.yml
   * description: potentially used to allow non-root users to use the control interface 
     [see wpa_supplicant for more information](https://w1.fi/cgit/hostap/tree/wpa_supplicant/wpa_supplicant.conf#n44)
 
+* **wifi_apt_cache_valid_time**
+  * default: 86400
+  * description: number of seconds APT cache is valid for
+
 ## Example Playbook
 
 Typical playbook run:
