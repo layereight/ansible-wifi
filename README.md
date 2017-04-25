@@ -39,16 +39,17 @@ $ ansible-galaxy install -r roles.yml
 
 * **wifi_country**
   * default: "DE"
-  * description: 
+  * description: [Country code](https://w1.fi/cgit/hostap/tree/wpa_supplicant/wpa_supplicant.conf#n206) for the country in which
+    the wifi device is currently operating.
   
 * **wifi_control_interface_access_group**
   * default: root
-  * description: potentially used to allow non-root users to use the control interface 
+  * description: Potentially used to allow non-root users to use the control interface.
     [see wpa_supplicant for more information](https://w1.fi/cgit/hostap/tree/wpa_supplicant/wpa_supplicant.conf#n44)
 
 * **wifi_apt_cache_valid_time**
   * default: 86400
-  * description: number of seconds APT cache is valid for
+  * description: Number of seconds APT cache is valid for.
 
 ## Example Playbook
 
