@@ -1,5 +1,4 @@
 ---
 
 wifi_country: "DE"
-
-ansible_wifi_control_interface_access_group: root
+wifi_control_interface_access_group: root
