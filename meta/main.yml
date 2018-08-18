@@ -4,6 +4,8 @@ galaxy_info:
   author: https://github.com/layereight/
   description: A simple Ansible role to install and configure wpa_supplicant.
 
+  dependencies: []
+
   platforms:
     - name: Debian
       versions:
