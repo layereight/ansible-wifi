@@ -1,4 +1,4 @@
-version: 1.2
+version: "1.2"
 name: wifi
 description: A simple Ansible role to install and configure wpa_supplicant.
 bindable: False
@@ -6,3 +6,4 @@ async: optional
 metadata:
   displayName: wifi
   documentationUrl: https://github.com/layereight/ansible-wifi
+plans: []
