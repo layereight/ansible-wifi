@@ -20,3 +20,15 @@
       dest: /etc/wpa_supplicant/wpa_supplicant.conf
       backup: yes
     notify: Restart Networking
+
+  #
+  # dhcpcd interferes with normal interfaces config for wpa_supplicant
+  #
+  - name: Disable dhcpcd for {{ wifi_disable_dhcpcd_workaround_interface }}
+    blockinfile:
+      path: /etc/dhcpcd.conf
+      block: |
+        denyinterfaces {{ wifi_disable_dhcpcd_workaround_interface }}
+        nohook wpa_supplicant
+    notify: Restart dhcpcd
+    when: wifi_disable_dhcpcd_workaround == true
