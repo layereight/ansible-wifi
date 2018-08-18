@@ -3,6 +3,7 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP={{ wifi_control_interface_acces
 update_config=1
 
 network={
-	ssid="{{ wifi_ssid }}"
-	psk="{{ wifi_psk }}"
+    scan_ssid=1
+    ssid="{{ wifi_ssid }}"
+    psk="{{ wifi_psk }}"
 }
