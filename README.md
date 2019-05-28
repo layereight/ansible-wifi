@@ -1,7 +1,7 @@
 
 # ansible-wifi 
 
-A simple Ansible role to install and configure wpa_supplicant.
+A simple Ansible role to install and configure wpa_supplicant on Debian like systems.
 
 ## Requirements
 
