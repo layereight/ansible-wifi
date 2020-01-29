@@ -5,4 +5,4 @@
     connection: local
 
     roles:
-      - layereight.wifi
+      - ansible-wifi
