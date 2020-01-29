@@ -1,5 +1,5 @@
 
-# ansible-wifi 
+# ansible-wifi [![Build Status](https://travis-ci.org/layereight/ansible-wifi.svg?branch=master)](https://travis-ci.org/layereight/ansible-wifi)
 
 A simple Ansible role to install and configure wpa_supplicant on Debian like systems.
 
