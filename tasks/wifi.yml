@@ -31,4 +31,4 @@
         denyinterfaces {{ wifi_disable_dhcpcd_workaround_interface }}
         nohook wpa_supplicant
     notify: Restart dhcpcd
-    when: wifi_disable_dhcpcd_workaround == true
+    when: wifi_disable_dhcpcd_workaround
