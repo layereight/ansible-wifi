@@ -22,7 +22,7 @@ $ ansible-galaxy install -r roles.yml
 ```YAML
 - name: layereight.wifi
   src: layereight.wifi
-  version: "1.2"
+  version: "1.2.1"
 ```
 * also see the [Ansible Galaxy documentation](http://docs.ansible.com/ansible/galaxy.html) and the 
 [Ansible Galaxy introduction](https://galaxy.ansible.com/intro)
