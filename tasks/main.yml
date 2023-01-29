@@ -1,4 +1,4 @@
 ---
 
-  - include: wifi.yml
+  - import_tasks: wifi.yml
     tags: [ wifi ]

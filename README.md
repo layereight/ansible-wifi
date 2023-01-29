@@ -22,7 +22,7 @@ $ ansible-galaxy install -r roles.yml
 ```YAML
 - name: layereight.wifi
   src: layereight.wifi
-  version: "1.2.1"
+  version: "1.3.0"
 ```
 * also see the [Ansible Galaxy documentation](http://docs.ansible.com/ansible/galaxy.html) and the 
 [Ansible Galaxy introduction](https://galaxy.ansible.com/intro)
@@ -50,7 +50,11 @@ $ ansible-galaxy install -r roles.yml
 * **wifi_apt_cache_valid_time**
   * default: 86400
   * description: Number of seconds APT cache is valid for.
-  
+
+* **wifi_rfkill_unblock**
+  * default: true
+  * description: Unblock wifi interface using `rfkill` when set to `true`.
+
 * **wifi_disable_dhcpcd_workaround**
   * default: false
   * description: dhcpcd interferes with normal interfaces config for wpa_supplicant. This workaround will disable dhcpcd
